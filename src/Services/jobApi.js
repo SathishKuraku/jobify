@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const jobApi = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://jobifyportal.onrender.com",
 });
 
 // Jobs
