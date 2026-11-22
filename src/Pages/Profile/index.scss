@@ -1,0 +1,330 @@
+.profile-page {
+  min-height: 100vh;
+  background: #101116;
+  color: #ffffff;
+  padding: 40px 20px;
+
+  .profile-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 32px;
+      margin: 12px 0;
+    }
+
+    p {
+      color: #a7a5b0;
+    }
+  }
+
+  .profile-tag {
+    color: #a78bfa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .profile-avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #272331;
+    color: #a78bfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    border: 1px solid #3b354b;
+  }
+
+  // Profile progress
+
+  .profile-progress-card {
+    background: #1b1921;
+    border: 1px solid #302c3b;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+
+  .progress-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0 0 8px;
+    }
+
+    p {
+      color: #a7a5b0;
+      font-size: 14px;
+    }
+  }
+
+  .progress-percent {
+    font-size: 28px;
+    font-weight: 700;
+    color: #a78bfa;
+  }
+
+  .progress-bar {
+    height: 10px;
+    width: 100%;
+    background: #35313e;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0 10px;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: #8b5cf6;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+  }
+
+  .progress-footer {
+    color: #9995a5;
+    font-size: 13px;
+  }
+
+  // Profile form
+
+  .profile-form {
+    background: #1b1921;
+    border: 1px solid #302c3b;
+    border-radius: 14px;
+    padding: 30px;
+  }
+
+  .profile-section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #a78bfa;
+    margin-bottom: 30px;
+
+    h2 {
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #d5d1df;
+    }
+
+    small {
+      color: #9995a5;
+      font-size: 12px;
+    }
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #121117;
+    border: 1px solid #35313e;
+    border-radius: 8px;
+    padding: 0 15px;
+    min-height: 48px;
+    color: #a78bfa;
+    transition: 0.2s;
+
+    &:focus-within {
+      border-color: #8b5cf6;
+    }
+
+    input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-size: 14px;
+      padding: 12px 0;
+
+      &::placeholder {
+        color: #777382;
+      }
+    }
+  }
+
+  // Resume
+
+  .resume-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #121117;
+    border: 1px dashed #494253;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .resume-icon {
+    width: 45px;
+    height: 45px;
+    background: #292333;
+    color: #a78bfa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .resume-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+
+    strong {
+      overflow-wrap: anywhere;
+    }
+
+    span {
+      color: #9995a5;
+      font-size: 12px;
+    }
+  }
+
+  .resume-upload-btn {
+    background: #292333;
+    border: 1px solid #494253;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 7px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: #3a304b;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  // Footer
+
+  .profile-form-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #302c3b;
+    padding-top: 25px;
+    margin-top: 30px;
+  }
+
+  .save-profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #8b5cf6;
+    color: #ffffff;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: #7744dd;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  .profile-message {
+    margin-top: 20px;
+    color: #86efac;
+    font-size: 14px;
+  }
+
+  .profile-loading {
+    text-align: center;
+    padding: 80px;
+    color: #a78bfa;
+  }
+}
+
+// Responsive
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 25px 15px;
+
+    .profile-form {
+      padding: 20px;
+    }
+
+    .profile-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .full-width {
+      grid-column: auto;
+    }
+
+    .profile-header h1 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-page {
+    .resume-box {
+      flex-wrap: wrap;
+    }
+
+    .resume-upload-btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .progress-info {
+      gap: 10px;
+    }
+
+    .progress-info p {
+      font-size: 12px;
+    }
+  }
+}

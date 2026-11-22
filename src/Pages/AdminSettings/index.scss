@@ -1,0 +1,262 @@
+
+.admin-settings {
+  min-height: 100vh;
+  padding: 35px;
+  background: #101116;
+  color: #fff;
+
+  .settings-header {
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 14px;
+    }
+  }
+
+  .settings-layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 25px;
+    align-items: start;
+  }
+
+  // Sidebar
+  .settings-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background: #1c1a22;
+    border: 1px solid #302d38;
+    border-radius: 12px;
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      background: transparent;
+      border: none;
+      border-radius: 8px;
+      color: #aaa;
+      text-align: left;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      svg {
+        font-size: 16px;
+      }
+
+      &:hover {
+        background: #292631;
+        color: #fff;
+      }
+
+      &.active {
+        background: #34294a;
+        color: #c4a5fd;
+      }
+    }
+  }
+
+  // Main content
+  .settings-content {
+    background: #1c1a22;
+    border: 1px solid #302d38;
+    border-radius: 12px;
+    padding: 30px;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  .settings-section-header {
+    margin-bottom: 25px;
+
+    h2 {
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #999;
+    }
+  }
+
+  // Form fields
+  .settings-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+
+    label {
+      color: #ddd;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #3b3745;
+      border-radius: 8px;
+      background: #25222d;
+      color: white;
+      font-size: 14px;
+      outline: none;
+
+      &:focus {
+        border-color: #a78bfa;
+      }
+
+      &::placeholder {
+        color: #777;
+      }
+    }
+  }
+
+  // Settings toggles
+  .settings-toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #302d38;
+
+    strong {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    p {
+      color: #999;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #8b5cf6;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+  }
+
+  // Save button
+  .settings-save-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding: 13px 22px;
+    background: #8b5cf6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: #7c3aed;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  // Messages
+  .settings-message {
+    padding: 13px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 13px;
+
+    &.success {
+      background: #1e3c30;
+      color: #4ade80;
+      border: 1px solid #28533f;
+    }
+
+    &.error {
+      background: #49272a;
+      color: #f87171;
+      border: 1px solid #633337;
+    }
+  }
+}
+
+.admin-settings-loading {
+  min-height: 100vh;
+  background: #101116;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsive
+@media (max-width: 850px) {
+  .admin-settings {
+    .settings-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .settings-sidebar {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      button {
+        flex: 1;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .admin-settings {
+    padding: 18px;
+
+    .settings-header h1 {
+      font-size: 24px;
+    }
+
+    .settings-sidebar {
+      flex-direction: column;
+
+      button {
+        justify-content: flex-start;
+      }
+    }
+
+    .settings-content {
+      padding: 20px;
+    }
+
+    .settings-toggle-row {
+      align-items: flex-start;
+    }
+
+    .settings-save-btn {
+      width: 100%;
+    }
+  }
+}

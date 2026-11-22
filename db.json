@@ -1,0 +1,188 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Python Developer",
+      "company": "TechNova Solutions",
+      "location": "Bangalore",
+      "type": "Full Time",
+      "experience": "Fresher",
+      "salary": "3-5 LPA",
+      "category": "IT",
+      "description": "Develop backend applications using Python.",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "title": "React JS Developer",
+      "company": "WebSpace Technologies",
+      "location": "Hyderabad",
+      "type": "Full Time",
+      "experience": "0-1 Years",
+      "salary": "3-5 LPA",
+      "category": "IT",
+      "description": "Develop frontend applications using React JS."
+    },
+    {
+      "id": "3",
+      "title": "Frontend Developer",
+      "company": "PixelCraft",
+      "location": "Chennai",
+      "type": "Internship",
+      "experience": "Fresher",
+      "salary": "15000/month",
+      "category": "IT",
+      "description": "Develop responsive web pages using HTML, CSS and JavaScript."
+    },
+    {
+      "id": "4",
+      "title": "Full Stack Developer",
+      "company": "Innovate Labs",
+      "location": "Bangalore",
+      "type": "Full Time",
+      "experience": "0-1 Years",
+      "salary": "4-7 LPA",
+      "category": "IT",
+      "description": "Work with React frontend and Python backend."
+    },
+    {
+      "id": "5",
+      "title": "Junior Java Developer",
+      "company": "CodeWorks",
+      "location": "Pune",
+      "type": "Full Time",
+      "experience": "Fresher",
+      "salary": "3-4 LPA",
+      "category": "IT",
+      "description": "Develop Java applications and REST APIs."
+    },
+    {
+      "id": "6",
+      "title": "UI Developer",
+      "company": "Creative Pixels",
+      "location": "Remote",
+      "type": "Full Time",
+      "experience": "0-1 Years",
+      "salary": "3-5 LPA",
+      "category": "Design",
+      "description": "Create attractive and user-friendly website interfaces."
+    },
+    {
+      "id": "7",
+      "title": "Backend Developer",
+      "company": "CloudMatrix",
+      "location": "Bangalore",
+      "type": "Full Time",
+      "experience": "Fresher",
+      "salary": "4-6 LPA",
+      "category": "IT",
+      "description": "Build backend services and manage databases."
+    },
+    {
+      "id": "8",
+      "title": "Software Engineer Trainee",
+      "company": "NextGen Systems",
+      "location": "Hyderabad",
+      "type": "Internship",
+      "experience": "Fresher",
+      "salary": "20000/month",
+      "category": "IT",
+      "description": "Learn and work on real software development projects."
+    },
+    {
+      "id": "9",
+      "title": "Associate Engineer",
+      "company": "YJC Global",
+      "location": "Bangalore",
+      "type": "Remote",
+      "experience": "Fresher",
+      "salary": "3-5 LPA",
+      "category": "Software Development",
+      "description": "Work on software development projects."
+    }
+  ],
+  "users": [
+    {
+      "id": "admin1",
+      "name": "Jobify sat",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "role": "admin",
+      "status": "Active",
+      "phone": "",
+      "location": "",
+      "education": "",
+      "skills": [],
+      "resume": "_resume_.pdf"
+    },
+    {
+      "id": "user1",
+      "name": "Demo User",
+      "email": "user@jobify.com",
+      "password": "user123",
+      "role": "user",
+      "status": "Active"
+    },
+    {
+      "name": "sathish",
+      "email": "sathish@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "id": "WD52h8J_68E",
+      "status": "Active"
+    }
+  ],
+  "savedJobs": [
+    {
+      "jobId": "5",
+      "userId": "WD52h8J_68E",
+      "id": "B5naNKz_USE"
+    }
+  ],
+  "applications": [
+    {
+      "jobId": "1",
+      "userId": "WD52h8J_68E",
+      "name": "sathish",
+      "email": "sathish@gmail.com",
+      "phone": "324768590",
+      "education": "btech",
+      "skills": "react,jxs",
+      "coverLetter": "hii ythis is sathish pls give me",
+      "resume": "_resume_.pdf",
+      "status": "Shortlisted",
+      "appliedAt": "2026-11-22T07:00:17.049Z",
+      "id": "2_7UBuMHeug"
+    },
+    {
+      "jobId": "4",
+      "userId": "WD52h8J_68E",
+      "name": "fre",
+      "email": "sa@gmail.com",
+      "phone": "123455667",
+      "education": "bct",
+      "skills": "hml",
+      "coverLetter": "hiii",
+      "resume": "Karthik_Resume-4.pdf",
+      "status": "Pending",
+      "appliedAt": "2026-11-22T07:05:18.882Z",
+      "id": "JIUpTSHE_WU"
+    }
+  ],
+  "settings": [
+    {
+      "id": "1",
+      "portalName": "Jobify",
+      "portalEmail": "admin@gmail.com",
+      "allowRegistration": true,
+      "maintenanceMode": false,
+      "emailNotifications": true,
+      "applicationNotifications": true,
+      "jobNotifications": false,
+      "adminName": "Jobify sat",
+      "adminEmail": "admin@gmail.com"
+    }
+  ],
+  "notifications": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

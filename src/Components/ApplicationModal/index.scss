@@ -1,0 +1,268 @@
+
+.application-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.application-modal {
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #1c1a22;
+  border: 1px solid #35313e;
+  border-radius: 16px;
+  padding: 28px;
+  color: white;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #aaa;
+    }
+  }
+
+  .modal-close {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background: #302c38;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background: #a78bfa;
+    }
+  }
+
+  .applicant-profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    background: #25222d;
+    border-radius: 12px;
+    margin-bottom: 25px;
+
+    .applicant-avatar {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #8b5cf6;
+      color: white;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .applicant-info {
+      h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #a78bfa;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .applicant-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #25222d;
+      padding: 18px;
+      border-radius: 10px;
+
+      svg {
+        color: #a78bfa;
+        font-size: 18px;
+      }
+
+      small {
+        display: block;
+        color: #999;
+        margin-bottom: 6px;
+      }
+
+      p {
+        color: #eee;
+        font-size: 14px;
+        word-break: break-word;
+      }
+    }
+  }
+
+  .modal-section {
+    margin-bottom: 25px;
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    .empty-text {
+      color: #999;
+      font-size: 14px;
+    }
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .skill-tag {
+      padding: 8px 14px;
+      background: #34294a;
+      color: #c4a5fd;
+      border: 1px solid #4b3868;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+  }
+
+  .cover-letter {
+    background: #25222d;
+    padding: 18px;
+    border-radius: 10px;
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+  }
+
+  .resume-card {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #25222d;
+    padding: 18px;
+    border-radius: 12px;
+
+    .resume-file {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+
+      svg {
+        font-size: 28px;
+        color: #f87171;
+      }
+
+      strong {
+        font-size: 14px;
+      }
+
+      p {
+        color: #999;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+
+    .resume-view-btn,
+    .resume-download-btn {
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 7px;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .resume-view-btn {
+      background: #8b5cf6;
+      color: white;
+
+      &:hover {
+        background: #7c3aed;
+      }
+    }
+
+    .resume-download-btn {
+      background: #33303b;
+      color: #ddd;
+
+      &:hover {
+        background: #44404e;
+      }
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    border-top: 1px solid #35313e;
+
+    button {
+      padding: 11px 24px;
+      border: none;
+      border-radius: 8px;
+      background: #33303b;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background: #45414e;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .application-modal {
+    padding: 20px;
+
+    .applicant-contact {
+      grid-template-columns: 1fr;
+    }
+
+    .resume-card {
+      align-items: stretch;
+      flex-direction: column;
+
+      .resume-file {
+        flex: auto;
+      }
+
+      .resume-view-btn,
+      .resume-download-btn {
+        justify-content: center;
+      }
+    }
+  }
+}
